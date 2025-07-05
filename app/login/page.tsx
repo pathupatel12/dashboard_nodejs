@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import LoginForm from '@/app/ui/login-form';
 import AcmeLogo from '@/app/ui/acme-logo';
 
@@ -10,7 +10,9 @@ export default function page() {
           <div className="w-32 text-white md:w-36">
           </div>
         </div> */}
-        <LoginForm />
+        <Suspense>
+          <LoginForm />
+        </Suspense>
       </div>
     </main>
   );
